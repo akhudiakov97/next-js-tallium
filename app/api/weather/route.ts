@@ -29,6 +29,8 @@ export async function GET(request: Request) {
   let lat = 28.3886186
   let lng = -81.5659069
 
+  console.log('smotrim na process.env', process.env);
+
   try {
     // First, try to geocode the address.
     const geocode = await fetch(
