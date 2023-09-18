@@ -61,7 +61,8 @@ export async function GET(request: Request) {
         }),
         {
           status: 400,
-          statusText: 'Bad Request'
+          statusText:
+            'Bad Request, process env: ' + process.env.GOOGLE_MAPS_API_KEY
         }
       )
     }
