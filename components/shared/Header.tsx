@@ -1,3 +1,5 @@
+'use client'
+
 import config from '@/lib/config'
 import Link from 'next/link'
 import HeaderDescription from './HeaderDescription'

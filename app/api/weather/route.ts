@@ -1,5 +1,7 @@
 import {GeocodeResponse, WeatherResponse} from '@/lib/types'
 
+export const runtime = 'edge'
+
 /**
  * The weather (client) API route handler.
  *
@@ -28,8 +30,6 @@ export async function GET(request: Request) {
   // Set default coordinates as fallback.
   let lat = 28.3886186
   let lng = -81.5659069
-
-  console.log('smotrim na process.env', process.env);
 
   try {
     // First, try to geocode the address.
@@ -61,8 +61,7 @@ export async function GET(request: Request) {
         }),
         {
           status: 400,
-          statusText:
-            'Bad Request, process env: ' + process.env.GOOGLE_MAPS_API_KEY
+          statusText: 'Bad Request'
         }
       )
     }

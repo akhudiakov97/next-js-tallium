@@ -1,3 +1,4 @@
+'use client'
 /**
  * The shared footer component.
  */

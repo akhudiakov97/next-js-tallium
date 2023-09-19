@@ -2,12 +2,13 @@
 
 import {usePathname} from 'next/navigation'
 
-type Route = '/' | '/wx-server' | '/wx-client'
+type Route = '/' | '/wx-server' | '/wx-client' | '/blog'
 
 const description: {[key in Route]: string} = {
   '/': 'About',
   '/wx-server': 'Weather (Server)',
   '/wx-client': 'Weather (Client)',
+  '/blog': 'WordPress Blog (Server)'
 }
 
 const HeaderDescription = () => {

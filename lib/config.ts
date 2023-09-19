@@ -9,10 +9,6 @@ const config = {
       path: '/'
     },
     {
-      name: 'Weather (Server)',
-      path: '/wx-server/'
-    },
-    {
       name: 'Weather (Client)',
       path: '/wx-client/'
     },
